@@ -104,6 +104,7 @@ main (gint argc, gchar **argv)
         exit (0);
     }
 
+    ibus_xkb_init (&argc, &argv);
     start_component ();
     return 0;
 }

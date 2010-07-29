@@ -12,9 +12,13 @@ ibus_engine_xkb_layouts_CPPFLAGS = \
 	$(NULL)
 ibus_engine_xkb_layouts_CFLAGS = \
 	@IBUS_CFLAGS@ \
+	@X11_CFLAGS@ \
+	@XKBFILE_CFLAGS@ \
 	$(NULL)
 ibus_engine_xkb_layouts_LDFLAGS = \
 	@IBUS_LIBS@ \
+	@X11_LIBS@ \
+	@XKBFILE_LIBS@ \
 	$(NULL)
 
 component_DATA = \
